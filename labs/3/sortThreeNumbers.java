@@ -15,22 +15,22 @@ public class sortThreeNumbers {
 	}
 	
 	public static void displaySortedNumbers(double num1, double num2, double num3) {
-		int highest = (int) Math.max(Math.max(num1,num2),num3);
-		int lowest = (int) Math.min(Math.min(num1,num2),num3);
-		int middle;
+		double highest = Math.max(Math.max(num1,num2),num3); // JA
+		double lowest = Math.min(Math.min(num1,num2),num3);
+		double middle;
 		
 		if (num1 != highest && num1 != lowest) {
-			middle = (int) num1;
+			middle = num1;
 		} else if (num2 != highest && num2 != lowest) {
-			middle = (int) num2;
+			middle = num2;
 		} else {
-			middle = (int) num3;
+			middle = num3;
 		}
 		
 		if (num1 == num2 || num1 == num3) {
-			middle = (int) num1;
+			middle = num1;
 		} else if (num2 == num3) {
-			middle = (int) num2;
+			middle = num2;
 		}
 		
 		System.out.print(lowest + " " + middle + " " + highest);
