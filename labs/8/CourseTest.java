@@ -1,4 +1,4 @@
-
+// JA: Does not compile
 public class CourseTest {
 	
 	public static void main(String[] args) {
